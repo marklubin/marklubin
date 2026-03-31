@@ -8,7 +8,7 @@ Software engineer. I think about agent memory, cognitive architecture, and infor
 
 I got here through building agents that needed to persist across sessions ([Kairix](https://github.com/marklubin/kairix), three generations). Retrieval was solved. The part nobody had a good answer for was what happens to memory over time — what should stay, what should be compressed, what should be forgotten.
 
-I [read the internals](https://marklubin.me/synix/articles/memory-analysis/) of eight major memory systems — Mem0, Letta/MemGPT, Cognee, Zep/Graphiti, LangMem, MemoryWeave, Motorhead, A-MEM. Write paths, read paths, storage backends, failure modes. None of them distinguish between information that changes every turn and information that should persist for weeks. They all use one flat namespace at one timescale.
+I [read the internals](https://marklubin.me/synix/articles/memory-analysis/) of eight major memory systems — Mem0, Letta/MemGPT, Cognee, Zep/Graphiti, LangMem, MemoryWeave, Motorhead, A-MEM. Write paths, read paths, storage backends, failure modes. None of them distinguish between information that changes every turn and information that should persist for weeks, or a lifetime. They all use one flat namespace at one timescale.
 
 I built [LENS](https://github.com/marklubin/lens-benchmark) to test whether this was a tooling gap or something deeper — a benchmark that tests coherence across sessions rather than single-turn retrieval. 22 adapters, 16 dataset scopes, 200+ evaluation runs. A SQLite baseline with embeddings scored higher than the purpose-built tools on longitudinal synthesis. I think that points at something structural.
 
@@ -26,7 +26,7 @@ The interesting part is what falls out of them. When you give agents the ability
 
 More recently I've been thinking about what this looks like past single agents — how autonomous systems discover each other, develop shared state, and produce collective behavior without central control. [Aegis](https://github.com/marklubin/aegis-poc) is an early attempt at that.
 
-The threads I keep coming back to: generational GC as a model for memory lifecycle, dynamical systems as a way to think about how information moves through cognitive architecture, and what emerges when you give agents the right substrate and get out of the way.
+The ideas are converging around adaptive dynamical systems, structural invariants, self-modification and governance mechanisms — and for the multi-agent case, something closer to collective dynamics than traditional distributed systems.
 
 ---
 
