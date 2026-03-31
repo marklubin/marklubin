@@ -26,7 +26,7 @@ The interesting part is what falls out of them. When you give agents the ability
 
 More recently I've been thinking about what this looks like past single agents — how autonomous systems discover each other, develop shared state, and produce collective behavior without central control. [Aegis](https://github.com/marklubin/aegis-poc) is an early attempt at that.
 
-The ideas are converging around adaptive dynamical systems, structural invariants, self-modification and governance mechanisms — and for the multi-agent case, something closer to collective dynamics than traditional distributed systems.
+The ideas are converging around adaptive dynamical systems, structural invariants, self-modification and governance mechanisms — and for the multi-agent case, something closer to collective self-organization than traditional distributed systems.
 
 ---
 
