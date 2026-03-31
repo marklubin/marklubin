@@ -1,6 +1,6 @@
 # Mark Lubin
 
-Software engineer. I think about agent memory, cognitive architecture, and what happens when you treat information lifecycle as a physics problem.
+Software engineer. I think about agent memory, cognitive architecture, and information lifecycle.
 
 **[marklubin.me](https://marklubin.me)** · [melubin@pm.me](mailto:melubin@pm.me)
 
