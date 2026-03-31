@@ -12,7 +12,7 @@ I [read the internals](https://marklubin.me/synix/articles/memory-analysis/) of 
 
 I think this points at something structural. Agents have to throw things away — context windows fill up, you can't keep everything — and the way an agent decides what to discard shapes what it becomes over time. That's not a cache hierarchy problem, where every tier holds the same data at different speeds. Different kinds of information need different retention policies, different update rates, and different compression strategies. Today's conversation and a user's long-term preferences aren't the same data moving through faster and slower storage — they're fundamentally different things that degrade in different ways.
 
-On top of that, whatever memory strategy you pick will stop working as the world changes. Without periodic rebuilding, memory quietly goes stale.
+And every time an agent summarizes, compresses, or decides what to keep, that decision is irreversible — and they stack. An agent that was great at summarizing your work conversations in January is keeping the wrong things by June because your work changed. It doesn't error out, it just gets quietly worse. Each compression was based on what mattered at the time, and nothing notices when those assumptions stop being true. The only fix is to periodically rebuild from raw material.
 
 I've been calling these three problems [compress, divide, and renew](https://marklubin.me/cdr.pdf).
 
