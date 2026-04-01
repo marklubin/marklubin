@@ -2,7 +2,7 @@
 
 Research engineer working on cognitive architecture, information dynamics, and adaptive systems.
 
-**[marklubin.me](https://marklubin.me)** · **[synix.dev](https://synix.dev)** · [melubin@pm.me](mailto:melubin@pm.me)
+**[marklubin.me](https://marklubin.me)** · **[synix.dev](https://synix.dev)** · [mark@synix.dev](mailto:mark@synix.dev)
 
 ---
 
